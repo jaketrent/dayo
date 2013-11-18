@@ -42,3 +42,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'slim'
+gem 'compass-rails', '~> 2.0.alpha.0'
