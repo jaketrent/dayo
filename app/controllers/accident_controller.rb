@@ -6,7 +6,7 @@ class AccidentController < ApplicationController
 
   def show
     @days = 123
-    @type = params[:type]
+    @name = params[:name]
 
 
   end

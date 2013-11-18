@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131118162037) do
+ActiveRecord::Schema.define(version: 20131118170028) do
 
   create_table "accidents", force: true do |t|
-    t.string   "type"
+    t.string   "name"
     t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
