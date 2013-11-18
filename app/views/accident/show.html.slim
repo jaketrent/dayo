@@ -1,10 +1,10 @@
 .accident
   .accident-area
    | This area has worked
-   span.accident-days<> 365
+   span.accident-days<> = @days
    | days
 
   .accident-without
     | without a
-    span.accident-type<> rebase
+    span.accident-type<> = @type
     | accident

@@ -5,7 +5,8 @@ class AccidentController < ApplicationController
   end
 
   def show
-
+    @days = 123
+    @type = 'rebaser'
   end
 
   def new
