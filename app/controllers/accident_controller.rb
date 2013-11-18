@@ -5,10 +5,11 @@ class AccidentController < ApplicationController
   end
 
   def show
-    @days = 123
-    @name = params[:name]
+    name = params[:name]
+    accident = Accident.where(name: name).order('date').last
 
-
+    @days = accident.days_since
+    @name = accident.name
   end
 
   def new
