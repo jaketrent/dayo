@@ -13,7 +13,9 @@ Dayo::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  get '/accident/:type', to: 'accident#show'
   resources :accident
+
 
   # Example resource route with options:
   #   resources :products do
