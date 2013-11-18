@@ -46,3 +46,6 @@ gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'rails_admin', '0.5.0'
 
 gem "devise"
+gem "unicorn"
+
+ruby "2.0.0"
