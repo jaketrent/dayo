@@ -47,5 +47,6 @@ gem 'rails_admin', '0.5.0'
 
 gem "devise"
 gem "unicorn"
+gem 'rails_12factor', group: :production
 
 ruby "2.0.0"
