@@ -8,8 +8,10 @@ class AccidentController < ApplicationController
     name = params[:name]
     accident = Accident.where(name: name).order('date').last
 
-    @days = accident.days_since
-    @name = accident.name
+    if accident.present?
+      @days = accident.days_since
+      @name = accident.name
+    end
   end
 
   def new
