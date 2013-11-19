@@ -1,12 +1,7 @@
 class AccidentController < ApplicationController
 
-  def index
-
-  end
-
   def show
-    name = params[:name]
-    accident = Accident.where(name: name).order('date').last
+    accident = _get_accident params[:name]
 
     if accident.present?
       @days = accident.days_since
@@ -16,6 +11,16 @@ class AccidentController < ApplicationController
 
   def new
 
+  end
+
+  private
+
+  def _get_accident(name)
+    if name.present?
+      Accident.where(name: name).order('date').last
+    else
+      Accident.order('date').last
+    end
   end
 
 end
